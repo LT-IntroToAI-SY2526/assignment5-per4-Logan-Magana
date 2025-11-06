@@ -143,7 +143,7 @@ class Board:
         Returns:
             True if we've placed all numbers, False otherwise
         """
-        if self.num_nums_placed == 81:
+        if self.num_nums_placed == self.size*self.size:
             return True
         else: 
             return False
@@ -160,7 +160,7 @@ class Board:
             column - index of the column to assign
             assignment - value to place at given row, column coordinate
         """
-        pass
+        
 
 
 def DFS(state: Board) -> Board:
@@ -303,13 +303,13 @@ if __name__ == "__main__":
     #  constrained.
     print(b)
     assert b.find_most_constrained_cell() == (4,8), "find most constrained cell test 1"
-    # assert b.failure_test() == False, "failure test test 1"
-    # assert b.goal_test() == False, "goal test test 1"
+    assert b.failure_test() == False, "failure test test 1"
+    assert b.goal_test() == False, "goal test test 1"
 
-    # b.rows[4][3] = []
-    # assert b.find_most_constrained_cell() == (4,3), "find most constrained cell test 2"
-    # assert b.failure_test() == True, "failure test test 2"
-    # print("All part 1 tests passed!")
+    b.rows[4][3] = []
+    assert b.find_most_constrained_cell() == (4,3), "find most constrained cell test 2"
+    assert b.failure_test() == True, "failure test test 2"
+    print("All part 1 tests passed!")
 
     # ##Now, let's write some quick tests to check update!
     # #Create a sudoku board.
