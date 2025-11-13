@@ -21,11 +21,11 @@ After completing the assignment, answer the following reflection questions:
 
 ## Reflection Questions
 
-1. What are some things that you learned through this assignment? Think about the concepts of backtracking, constraint satisfaction, and search algorithms. Were there any particular challenges you faced while implementing the Board class methods or the DFS/BFS functions? How did you overcome them?
+1. What are some things that you learned through this assignment? Think about the concepts of backtracking, constraint satisfaction, and search algorithms. Were there any particular challenges you faced while implementing the Board class methods or the DFS/BFS functions? How did you overcome them? The main thing I learned from this was the use of DFS and BFS. I was pretty unaware of BFS especially since most problems that I solve involve DFS ( like a maze or a logic puzzle ). I was able to determine that DFS commits to a solution until it reaches a solution or a dead end in which it backtracks and BFS goes through both options step by step until one side becomes a dead end. Although I understood the logic behind both systems, the syntax itself was difficult to write on my own since i'm pretty new to programming. I am able to come up with some psuedo code in my head though.
 
 
 
-2. How can you apply what you learned in this assignment to future programs or projects? Consider other types of problems that involve searching through possibilities, making decisions, and backtracking when those decisions don't work out. Can you think of real-world scenarios where DFS or BFS might be useful? What about other constraint satisfaction problems?
+2. How can you apply what you learned in this assignment to future programs or projects? Consider other types of problems that involve searching through possibilities, making decisions, and backtracking when those decisions don't work out. Can you think of real-world scenarios where DFS or BFS might be useful? What about other constraint satisfaction problems? One scenario that I can think of is chess, which I've started learning about recently.  Although there is a seemingly infinite amount of moves one can make in a game of chess, if you narrow the scope to a move or two, you can use DFS or BFS to exucute the best move possible. Since it is against another player, there may be another section in the program that is used to predict the other players move, which may require another DFS or BFS but from the "players" perception.
 
 
 

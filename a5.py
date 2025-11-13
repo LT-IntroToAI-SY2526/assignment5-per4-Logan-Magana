@@ -211,7 +211,20 @@ def BFS(state: Board) -> Board:
     Returns:
         either None in the case of invalid input or a solved board
     """
-    pass
+    the_queue = Queue([state])
+    while not the_queue.is_empty():
+        current_board: Board = the_queue.pop()
+        if current_board.goal_test():
+            return current_board
+        row , col = current_board.find_most_constrained_cell()
+        possible_value = current_board.rows[row][col]
+       
+        for val in possible_value:
+            new_board = copy.deepcopy(current_board)
+            new_board.update(row,col,val)
+            if not new_board.failure_test():
+                the_queue.push(new_board)
+    return None 
 
 
 if __name__ == "__main__":
