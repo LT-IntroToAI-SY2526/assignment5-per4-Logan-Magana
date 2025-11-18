@@ -1,0 +1,21 @@
+{
+  "student_folder": "/Users/robertberg/Documents/intro_to_ai_sy2526/per4/grading/assignment5-per4-submissions/assignment5-per4-Logan-Magana",
+  "code_points": 10,
+  "code_feedback": [
+    "\u2713 Successfully imported student code",
+    "\u2713 Board initialization works",
+    "\u2713 find_most_constrained_cell returns tuple",
+    "\u2713 failure_test works correctly",
+    "\u2713 goal_test works correctly",
+    "\u2713 update function works",
+    "\u2713 DFS function exists",
+    "\u2713 BFS function exists"
+  ],
+  "writeup_points": 0,
+  "writeup_feedback": [
+    "\u2717 Could not find all three questions",
+    "  Found Q1: True, Q2: True, Q3: False"
+  ],
+  "total_points": 10,
+  "total_possible": 15
+}
